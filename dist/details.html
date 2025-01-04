@@ -1,0 +1,278 @@
+<!doctype html>
+<html>
+<head>
+    <!-- Declares the character set for the document -->
+    <meta charset="UTF-8">
+    
+    <!-- Makes the website responsive on different screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Includes Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Website name -->
+    <title>Hazel</title>
+
+    <!-- icon -->
+    <link rel="icon" href="images/hazel logo.png">
+
+
+    <!-- Google Fonts integration for better typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Adds icons from Ionicons -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <!-- Adds icons from fontawesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Sets a gradient background and full-screen height -->
+
+    <header class="bg-slate-700">
+        <!-- Header section with a white background -->
+        <nav class="flex justify-between items-center w-[92%] mx-auto py-4">
+            <!-- Navigation bar with flexible layout -->
+            <div>
+                <!-- Logo Section -->
+                <a href="#" class="text-2xl text-neutral-50 font-bold">Hazel</a>
+            </div>
+            <div class="nav-links duration-500 md:static absolute bg-slate-700 opacity-95 md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+                <!-- Navigation links (hidden on small screens by default) -->
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <!-- Links are displayed in a row for larger screens, but stacked on smaller ones -->
+                    <li><a class="text-neutral-50 hover:underline  underline-offset-8 decoration-2 decoration-white duration-300 font-bold" href="index.html">Hazel</a></li>
+
+                    <li><a class="text-neutral-50 hover:underline underline-offset-8 decoration-2 decoration-white duration-300 font-bold" href="details.html">How it works</a></li>
+
+                    <li><a class="text-neutral-50 hover:underline underline-offset-8 decoration-2 decoration-white duration-300 font-bold" href="about.html">About us</a></li>
+
+                    <li><a class="text-neutral-50 hover:underline underline-offset-8 decoration-2 decoration-white duration-300 font-bold" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                <!-- Join button and hamburger menu for mobile screens -->
+                <div>
+                    <button class="text-neutral-50 border rounded px-2 py-1 font-medium hover:border-0 hover:bg-white hover:text-black ">Join the waitlist</button>
+                </div>
+                <!-- Hamburger menu icon (visible only on small screens) -->
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden text-neutral-50"></ion-icon>
+            </div>
+        </nav>
+    </header>
+
+    <!------------------- intro ----------------->
+
+    <div class="bg-cover text-neutral-50 py-12" style="background-image: url(images/HORIZONTAL\ MEETS\ VERTICAL.jpeg);">
+        <div>
+            <p class="text-3xl md:text-6xl justify-center items-center flex">Hazel brings together the best </p>
+            <p class="text-3xl md:text-6xl justify-center items-center flex">architects and builders to</p>
+            <p class="text-3xl md:text-6xl justify-center items-center flex">provide a stress-free building</p>
+            <p class="text-3xl md:text-6xl justify-center items-center flex mb-12 pb-12">experience.</p>
+        </div>
+    </div>
+
+    <!-- ================================================== -->
+<section>
+    <div class="grid grid-cols-1 md:grid-cols-3 my-12">
+        <div class="my-8 ps-4">
+            <p class="text-3xl">Personal support</p>
+            <p class="pt-4">We guide you through every step of the process to ensure your building experience goes as smoothly as possible.</p>
+        </div>
+        <div class="my-8 ps-4">
+            <p class="text-3xl">10 year warranty</p>
+            <p class="pt-4">Your peace of mind is assured with 10 years of excellent warranty coverage for any issues after completion.</p>
+        </div>
+        <div class="my-8 ps-4">
+            <p class="text-3xl">Knowledge and experience</p>
+            <p class="pt-4">We bring together the right skills from trusted and vetted professionals, from initial sketches to permits and construction.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ======================================================= -->
+<section class="mt-12 pt-12">
+    <div class="text-4xl md:text-6xl py-12 my-12">
+        <p class="justify-center flex">
+            Haaven offers a better way to
+        </p>
+        <p class="md:ps-10 pb-12 mb-12 flex justify-start">
+            build your space.
+        </p>
+    </div>
+</section>
+
+<!-- ======================================================== -->
+<section class="container py-10 my-10">
+    <div class="md:ms-12 ">
+        <p class="text-4xl pb-10 ms-4 md:text-6xl">1. Select</p>
+        <hr class="border border-black mb-10 mx-4">
+        <div class="grid grid-cols-1 md:grid-cols-2">
+            <div class="px-3 pt-9">
+                <p class="text-3xl mb-4">
+                    Hazel Tiny houses are designed by world-class architects.
+                </p>
+                <p class="text-xl">
+                    The unique designs are functionally perfected and offer a lot of comfort in a small tiny house. Select a design from the Haaven Collection, personalise it to your likes and we'll get started.
+                </p>
+                <hr class="border border-black my-10 md:me-5">
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                    <p class="text-xl pb-4">Select a design from the Hazel Collection</p>
+                    <div class="md:justify-center flex pe-8">
+                        <button class="bg-amber-400 px-3 py-3 text-gray-950 font-medium hover:bg-amber-300 duration-300 border-0 rounded mb-12">Collection</button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-end pt-9">
+                <img src="images/Black & Brown Minimalistic Loft 🤎 Happy Friday….jpeg" alt="" class="rounded-md text-lg">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container py-10 my-10">
+    <div class="md:ms-12 ">
+        <p class="text-4xl pb-10 ms-4 md:text-6xl">2. Plan</p>
+        <hr class="border border-black mb-10 mx-4">
+        <div class="grid grid-cols-1 md:grid-cols-2">
+            <div class="px-3 pt-9">
+                <p class="text-3xl mb-5">
+                    Found the perfect design? Hazel connects you with the right parties needed to build your space.
+                </p>
+                <p class="text-xl pb-4">
+                    Hazel connects you to the right parties to build your space without any trouble. Hazel supports you through the whole process. We can perform a feasibility study and if needed we can support you with getting a permit.
+                </p>
+                <p class="text-xl pb-4">
+                    After this we’ll introduce you to your Head Contractor. An experienced and reliable building partner of Hazel who will take care of all things construction- from foundations to plumbing.
+                </p>
+                <p class="text-xl pb-4">
+                    The whole time, Hazel keeps an eye on the process. We make sure everyone does their job and your wishes are fully met.
+                </p>
+                
+            </div>
+            <div class="flex justify-end pt-9">
+                <img src="images/Two Bedroom Bungalow House Design (Master En-suite) - Muthurwa_com.jpeg" alt="" class="rounded-md text-lg">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container py-10 my-10">
+    <div class="md:ms-12 ">
+        <p class="text-4xl pb-10 ms-4 md:text-6xl">3. Build</p>
+        <hr class="border border-black mb-10 mx-4">
+        <div class="grid grid-cols-1 md:grid-cols-2">
+            <div class="px-3 pt-9">
+                <p class="text-3xl mb-4">
+                    Now that the team is assembled, we can build your new space.
+                </p>
+                <p class="text-xl">
+                    The engineers and production facilities now get to work. They ensure the structural soundness of the design and produce high-quality elements in prefab factories around Europe.
+                </p>
+                <p class="text-xl pb-4">
+                    Within 15 weeks, your home is transported and assembled. We minimise on-site labour as much as we can. This is better for your wallet and the peace of your neighbourhood.
+                </p>
+                <p class="text-xl pb-4">
+                    From start to finish, Haaven guarantees no surprises. No unvetted suppliers. No hidden costs. No unexpected delays. And, full control to you.
+                </p>
+            </div>
+            <div class="flex justify-end pt-9">
+                <img src="images/0ecc9f44-71fc-409a-99a4-a98693814c28.jpeg" alt="" class="rounded-md text-lg">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container py-10 my-10">
+    <div class="md:ms-12 ">
+        <p class="text-4xl pb-10 ms-4 md:text-6xl">4. Enjoy</p>
+        <hr class="border border-black mb-10 mx-4">
+        <div class="grid grid-cols-1 md:grid-cols-2">
+            <div class="px-3 pt-9">
+                <p class="text-3xl mb-4">
+                    Once the home is placed, it’s time to make it yours.
+                </p>
+                <p class="text-xl">
+                    This stage is completely tailored to your personal wishes. Haaven can also support you in finishing your home until the last details.
+                </p>
+                <p class="text-xl pb-4">
+                    All of our customers get access to private support channels. Got any questions or need help? We’re here to support you.
+                </p>
+                <p class="text-xl pb-4">
+                    Plus, our team is always available to help you plan home renovations or any other future projects. Happy living and enjoy your Haaven space.
+                </p>
+            </div>
+            <div class="flex justify-end pt-9">
+                <img src="images/Modern A-frame Cabin House Architectural Plans 18x23, Tiny House Plan, DIY Blueprint, Small Cabin Plan With 2 Terraces, Tiny Home Plans - Etsy.jpeg" alt="" class="rounded-md text-lg">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<footer class="bg-amber-400">
+    <div class="grid grid-cols-1 md:grid-cols-4 py-12">
+        <div class="text-3xl py-8 ms-5">
+            Hazel
+        </div>
+        
+        <div class="py-8">
+            <ul class="ms-5">
+                <li class="text-sm">Discover</li>
+                <li class="mt-4 mb-3"><a href="index.html" class="hover:underline">Hazel</a></li>
+                <li class=" mb-3"><a href="about.html" class="hover:underline">About</a></li>
+                <li class=" mb-3"><a href="" class="hover:underline">Blog</a></li>
+            </ul>
+        </div>
+
+        <div class="py-8">
+            <ul class="ms-5">
+                <li class="text-sm">Service</li>
+                <li class="mt-4 mb-3"><a href="details.html" class="hover:underline">How it works</a></li>
+                <li class=" mb-3"><a href="contact.html" class="hover:underline">Contact</a></li>
+                <li class=" mb-3"><a href="" class="hover:underline">Press</a></li>
+            </ul>
+        </div>
+        
+        <div class="py-8">
+            <ul class="ms-5">
+                <li class="text-sm">contact</li>
+                <li class="mt-4 mb-3">7, Farayola Street</li>
+                <li class="mb-3">Ketu-Alapere</li>
+                <li class="mb-3">Lagos</li>
+                <li class="mb-3">akabane2234@gmail.com</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+    <!-- JavaScript to handle the toggle of the navigation menu -->
+    <script>
+        // Selects the navigation links container
+        const navLinks = document.querySelector('.nav-links');
+        
+        // Function to toggle the menu visibility
+        function onToggleMenu(e) {
+            // Switch the icon between 'menu' and 'close'
+            e.name = e.name === 'menu' ? 'close' : 'menu';
+            // Toggle the menu's position to make it appear or disappear
+            navLinks.classList.toggle('top-[9%]');
+        }
+    </script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

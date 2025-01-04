@@ -1,0 +1,306 @@
+<!doctype html>
+<html>
+<head>
+    <!-- Declares the character set for the document -->
+    <meta charset="UTF-8">
+    
+    <!-- Makes the website responsive on different screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Includes Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Website name -->
+    <title>Hazel</title>
+
+    <!-- icon -->
+    <link rel="icon" href="images/hazel logo.png">
+
+
+    <!-- Google Fonts integration for better typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Adds icons from Ionicons -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <!-- Adds icons from fontawesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Sets a gradient background and full-screen height -->
+
+    <header class=" bg-slate-50">
+        <!-- Header section with a white background -->
+        <nav class="flex justify-between items-center w-[92%] mx-auto py-4 bg-slate-50">
+            <!-- Navigation bar with flexible layout -->
+            <div>
+                <!-- Logo Section -->
+                <a href="#" class="text-2xl font-bold">Hazel</a>
+            </div>
+            <div class="nav-links duration-500 md:static absolute opacity-95 md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5 bg-slate-50">
+                <!-- Navigation links (hidden on small screens by default) -->
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <!-- Links are displayed in a row for larger screens, but stacked on smaller ones -->
+                    <li><a class="hover:underline  underline-offset-8 decoration-2 decoration-black duration-300 font-bold" href="index.html">Hazel</a></li>
+
+                    <li><a class=" hover:underline underline-offset-8 decoration-2 decoration-black duration-300 font-bold" href="details.html">How it works</a></li>
+
+                    <li><a class="hover:underline underline-offset-8 decoration-2 decoration-black duration-300 font-bold" href="">About us</a></li>
+
+                    <li><a class="hover:underline underline-offset-8 decoration-2 decoration-black duration-300 font-bold" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                <!-- Join button and hamburger menu for mobile screens -->
+                <div>
+                    <button class="border rounded px-2 py-1 font-medium hover:border-0 border-black hover:bg-black hover:text-white ">Join the waitlist</button>
+                </div>
+                <!-- Hamburger menu icon (visible only on small screens) -->
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+        </nav>
+    </header>
+
+    <!------------------- intro ----------------->
+
+    <div class="my-12 py-12">
+        <div class="py-12 my-12 font-medium">
+            <p class="text-3xl md:text-6xl justify-center md:text-center itms-center flex ps-2">
+                We’re a homebuilding platform that places customers at the centre, surrounded by the best architects, engineers, and builders.
+            </p>
+        </div>
+    </div>
+
+    <!-- ================================================== -->
+
+    <div class="justify-center flex mb-12 pb-12">
+        <img src="images/Office Culture Stinks But Suits Fashion Makes Us Salivate.jpeg" alt="">
+    </div>
+
+
+
+
+    <!-- =========================================== -->
+
+<div class="md:mx-12 md:ps-12 justify-center flex my-12 py-12">
+    <p class="md:text-2xl text-lg ps-2">
+        <span class="md:ps-12 md:ms-12">When</span> people are making one of the biggest decisions of their lives—building a home—there’s a lot at stake. Especially when the process can be stressful and full of hiccups. Haaven is here to change this. Our platform brings together all the right skills from architects, prefabricated home builders and contractors to help you bring your home to life. These professionals are vetted, experienced and trusted. We also help you manage your budget and timeline so there are no surprises. Haaven understands the stress in building spaces and work relentlessly to make the experience the best it can be for everyone involved.
+    </p>
+</div>
+
+<!-- ================================================= -->
+<section>
+    <div class="my-12 py-12">
+        <div>
+            <p class="text-4xl pb-12 ms-4 md:text-6xl">The team</p>
+            <hr class="border border-black mb-10 mx-4">
+        </div>
+
+        <section class="lg:flex mt-12">
+            <div class="mx-auto max-w-4xl my-10">
+                <div class="relative">
+                    <img src="images/Screenshot_20241214_182129_Gallery.jpg" class="w-full h-full object-cover rounded-lg" alt="">
+                    <div class="absolute bg-black bg-opacity-50 inset-0 flex justify-end flex-col p-4 rounded-lg">
+                        <div class="text-white">
+                            <h2 class="text-2xl font-medium ps-4">
+                                Alexander Martins
+                            </h2>
+                            <p class="ps-4 py-2">
+                                CEO and Founder of Hazel
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mx-auto max-w-4xl my-10">
+                <div class="relative">
+                    <img src="images/Tampa Copy.jpg" class="w-full h-full object-cover rounded-lg" alt="">
+                    <div class="absolute bg-black bg-opacity-50 inset-0 flex justify-end flex-col p-4 rounded-lg">
+                        <div class="text-white">
+                            <h2 class="text-2xl font-medium ps-4">
+                                Theresa Johnson
+                            </h2>
+                            <p class="ps-4 py-2">
+                                Co-Founder
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        <section class="lg:flex mt-12">
+            <div class="mx-auto max-w-4xl my-10">
+                <div class="relative">
+                    <img src="images/luon_live (1).jpeg" class="w-full h-full object-cover rounded-lg" alt="">
+                    <div class="absolute bg-black bg-opacity-50 inset-0 flex justify-end flex-col p-4 rounded-lg">
+                        <div class="text-white">
+                            <h2 class="text-2xl font-medium ps-4">
+                                Wendell Misiedjan
+                            </h2>
+                            <p class="ps-4 py-2">
+                                Head Technology
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mx-auto max-w-4xl my-10">
+                <div class="relative">
+                    <img src="images/0de644f5-a812-48bb-ae64-4d607bd99126.jpeg" class="w-full h-full object-cover rounded-lg" alt="">
+                    <div class="absolute bg-black bg-opacity-50 inset-0 flex justify-end flex-col p-4 rounded-lg">
+                        <div class="text-white">
+                            <h2 class="text-2xl font-medium ps-4">
+                                Eva Hoffmann
+                            </h2>
+                            <p class="ps-4 py-2">
+                                Head Sales
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lg:flex mt-12">
+            <div class="mx-auto max-w-4xl my-10">
+                <div class="relative">
+                    <img src="images/a3fe5577-52df-4f0e-9d0b-307f3ac0b180.jpg" class="w-full h-full object-cover rounded-lg" alt="">
+                    <div class="absolute bg-black bg-opacity-50 inset-0 flex justify-end flex-col p-4 rounded-lg">
+                        <div class="text-white">
+                            <h2 class="text-2xl font-medium ps-4">
+                                Nelte Vreeke
+                            </h2>
+                            <p class="ps-4 py-2">
+                                Technology
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mx-auto max-w-4xl my-10">
+                <div class="relative">
+                    <img src="images/d3bc73ab-cd2e-4887-af90-ef5ecdb3eeb2.jpeg" class="w-full h-full object-cover rounded-lg" alt="">
+                    <div class="absolute bg-black bg-opacity-50 inset-0 flex justify-end flex-col p-4 rounded-lg">
+                        <div class="text-white">
+                            <h2 class="text-2xl font-medium ps-4">
+                                Davide Cardu
+                            </h2>
+                            <p class="ps-4 py-2">
+                                Head Architecture
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lg:flex mt-12">
+            <div class="mx-auto max-w-4xl my-10">
+                <div class="relative">
+                    <img src="images/12 Rich Business Woman Outfits Tricks You Don't Want To Miss This Winter.jpg" class="w-full h-full object-cover rounded-lg" alt="">
+                    <div class="absolute bg-black bg-opacity-50 inset-0 flex justify-end flex-col p-4 rounded-lg">
+                        <div class="text-white">
+                            <h2 class="text-2xl font-medium ps-4">
+                                Federica Tullio
+                            </h2>
+                            <p class="ps-4 py-2">
+                                Head Marketing
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mx-auto max-w-4xl my-10">
+                <div class="relative">
+                    <img src="images/z.jpeg" class="w-full h-full object-cover rounded-lg" alt="">
+                    <div class="absolute bg-black bg-opacity-50 inset-0 flex justify-end flex-col p-4 rounded-lg">
+                        <div class="text-white">
+                            <h2 class="text-2xl font-medium ps-4">
+                                Elvis Scott
+                            </h2>
+                            <p class="ps-4 py-2">
+                                Head of production
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
+
+<!-- ======================================== -->
+<footer class="bg-amber-400">
+    <div class="grid grid-cols-1 md:grid-cols-4 py-12">
+        <div class="text-3xl py-8 ms-5">
+            Hazel
+        </div>
+        
+        <div class="py-8">
+            <ul class="ms-5">
+                <li class="text-sm">Discover</li>
+                <li class="mt-4 mb-3"><a href="" class="hover:underline">Hazel</a></li>
+                <li class=" mb-3"><a href="" class="hover:underline">About</a></li>
+                <li class=" mb-3"><a href="" class="hover:underline">Blog</a></li>
+            </ul>
+        </div>
+
+        <div class="py-8">
+            <ul class="ms-5">
+                <li class="text-sm">Service</li>
+                <li class="mt-4 mb-3"><a href="details.html" class="hover:underline">How it works</a></li>
+                <li class=" mb-3"><a href="contact.html" class="hover:underline">Contact</a></li>
+                <li class=" mb-3"><a href="" class="hover:underline">Press</a></li>
+            </ul>
+        </div>
+        
+        <div class="py-8">
+            <ul class="ms-5">
+                <li class="text-sm">contact</li>
+                <li class="mt-4 mb-3">7, Farayola Street</li>
+                <li class="mb-3">Ketu-Alapere</li>
+                <li class="mb-3">Lagos</li>
+                <li class="mb-3">akabane2234@gmail.com</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+    <!-- JavaScript to handle the toggle of the navigation menu -->
+    <script>
+        // Selects the navigation links container
+        const navLinks = document.querySelector('.nav-links');
+        
+        // Function to toggle the menu visibility
+        function onToggleMenu(e) {
+            // Switch the icon between 'menu' and 'close'
+            e.name = e.name === 'menu' ? 'close' : 'menu';
+            // Toggle the menu's position to make it appear or disappear
+            navLinks.classList.toggle('top-[9%]');
+        }
+    </script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

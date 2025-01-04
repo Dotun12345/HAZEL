@@ -1,0 +1,450 @@
+<!doctype html>
+<html>
+<head>
+    <!-- Declares the character set for the document -->
+    <meta charset="UTF-8">
+    
+    <!-- Makes the website responsive on different screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Includes Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Website name -->
+    <title>Hazel</title>
+
+    <!-- icon -->
+    <link rel="icon" href="images/hazel logo.png">
+
+
+    <!-- Google Fonts integration for better typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Adds icons from Ionicons -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <!-- Adds icons from fontawesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Sets a gradient background and full-screen height -->
+
+    <header class="bg-neutral-700">
+        <!-- Header section with a white background -->
+        <nav class="flex justify-between items-center w-[92%] mx-auto py-4">
+            <!-- Navigation bar with flexible layout -->
+            <div>
+                <!-- Logo Section -->
+                <a href="#" class="text-2xl text-neutral-50 font-bold">Hazel
+                </a>
+            </div>
+            <div class="nav-links duration-500 md:static absolute bg-neutral-700 opacity-95 md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+                <!-- Navigation links (hidden on small screens by default) -->
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <!-- Links are displayed in a row for larger screens, but stacked on smaller ones -->
+                    <li><a class="text-neutral-50 hover:underline  underline-offset-8 decoration-2 decoration-amber-400 duration-300 font-bold" href="index.html">Hazel</a></li>
+
+                    <li><a class="text-neutral-50 hover:underline underline-offset-8 decoration-2 decoration-amber-400 duration-300 font-bold" href="details.html">How it works</a></li>
+
+                    <li><a class="text-neutral-50 hover:underline underline-offset-8 decoration-2 decoration-amber-400 duration-300 font-bold" href="about.html">About us</a></li>
+
+                    <li><a class="text-neutral-50 hover:underline underline-offset-8 decoration-2 decoration-amber-400 duration-300 font-bold" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                <!-- Join button and hamburger menu for mobile screens -->
+                <div>
+                    <button class="text-neutral-50 border rounded px-2 py-1 font-medium hover:border-0 hover:bg-amber-300 ">Join the waitlist</button>
+                </div>
+                <!-- Hamburger menu icon (visible only on small screens) -->
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden text-neutral-50"></ion-icon>
+            </div>
+        </nav>
+    </header>
+
+    <!------------------- intro ----------------->
+
+    <div class="bg-[url('images/pexels-chris-f-38966-29448961.jpg')]  bg-cover text-neutral-50 py-12">
+        <div">
+            <p class="text-xl pb-5 justify-center items-center flex">Hazel: coming soon</p>
+            <p class="text-3xl md:text-6xl justify-center items-center flex">A garden space that lives.</p>
+            <p class="text-3xl md:text-6xl justify-center items-center flex">Designed with eye for every detail.</p>
+
+            <div class="justify-center items-center flex pt-8 pb-12 mb-12">
+                <button class="bg-amber-400 px-3 py-3 text-gray-950 font-medium hover:bg-amber-300 duration-300 border-0 rounded mb-12">I am interested</button>
+            </div>
+        </div>
+    </div>
+
+    
+<!------------------ projects -------------->
+
+<div class="md:text-6xl text-neutral-400 py-12 mb-12 text-3xl">
+    <p class="md:justify-end flex justify-center">
+        Guest room. Garden office. Atelier.
+    </p>
+    <p class="justify-center flex">
+        Playground. Arcade. Yoga space.
+    </p>
+    <p class="md:ps-10 pb-12 mb-12 justify-center flex md:justify-start">
+        Airbnb. <span class="text-black"> You decide.</span>
+    </p>
+</div>
+
+
+<div class="bg-neutral-700 text-neutral-50 justify-around items-center grid grid-cols-1 md:grid-cols-2">
+    <div class="justify-center flex pb-6 md:pb-0">
+        <img src="images/Blazers_and_Sportcoats_Gallery-removebg-preview.png" width="400px" alt="">
+    </div>
+    <div>
+        <p class="text-6xl justify-center flex md:justify-start">
+            World class <br> architecture
+        </p>
+        <p class="pt-6 text-xl justify-center flex md:justify-start">
+            Honoured on the prestigious AD100 list,
+        </p>
+        <p class="text-xl justify-center flex md:justify-start">
+            Alexander brings the best designs to the Hazel.
+        </p>
+        <div class=" justify-center flex md:justify-start">
+            <button class="bg-amber-400 px-3 py-3 text-gray-950 font-medium hover:bg-amber-300 duration-300 border-0 my-6">More information</button>
+        </div>
+        
+    </div>
+</div>
+
+
+<!-- <section>
+    <div class="grid grid-cols-2 gap-96">
+      <div class="bg-archiMale">
+        <p style="background-image: url(images/Men\'s\ LookBook\ _\ Photo.jpg);" class="pt-96 mt-6 ms-10 bg-cover">We handle it</p>
+      </div>
+      <div>
+        sdfgfds
+      </div>
+    </div>
+</section> -->
+
+
+<section class="lg:flex mt-12">
+    <div class="mx-auto max-w-4xl my-10">
+        <div class="relative">
+            <img src="images/Men's LookBook _ Photo.jpg" class="w-full h-full object-cover rounded-lg" alt="">
+            <div class="absolute bg-black bg-opacity-50 inset-0 flex justify-end flex-col p-4 rounded-lg">
+                <div class="card_header bg-white bg-opacity-65 py-3 rounded">
+                    <div class="card_icon justify-between flex">
+                        <h2 class="text-2xl font-medium ps-4">
+                            We handle it
+                        </h2>
+                        <i class="fa-solid fa-plus pe-6 text-xl"></i>
+                    </div>
+                    <div class="card_details hidden transition-all duration-300 ease-in-out">
+                        <p class="ps-4 py-2">
+                            No worries and a super-smooth process. From planning to moving in. That's our promise. While you relax, we take care of:
+                            <ul class="ps-4">
+                                <li class="pb-2">&#10004 Permitting</li>
+                                <li class="pb-2">&#10004 Construction</li>
+                                <li class="pb-2">&#10004 After-care</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="mx-auto max-w-4xl my-10">
+        <div class="relative">
+            <img src="images/Tampa Copy.jpg" class="w-full h-full object-cover rounded-lg" alt="">
+            <div class="absolute bg-black bg-opacity-50 inset-0 flex justify-end flex-col p-4 rounded-lg">
+                <div class="card_header bg-white bg-opacity-65 py-3 rounded">
+                    <div class="card_icon justify-between flex">
+                        <h2 class="text-2xl font-medium ps-4">
+                            Carbon-neutral
+                        </h2>
+                        <i class="fa-solid fa-plus pe-6 text-xl"></i>
+                    </div>
+                    <div class="card_details hidden transition-all duration-300 ease-in-out">
+                        <p class="ps-4 py-2">
+                            Haaven spaces are all built carbon neutral by default. Moreover, we optimise all our spaces for hotel-grade thermal performance.
+                            <ul class="ps-4">
+                                <li class="pb-2">&#10004 Carbon neutral build</li>
+                                <li class="pb-2">&#10004 Hospital-grade air filtration</li>
+                                <li class="pb-2">&#10004 Hotel-grade thermal performance</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="lg:flex mt-12">
+    <div class="mx-auto max-w-4xl my-10">
+        <div class="relative">
+            <img src="images/12 Rich Business Woman Outfits Tricks You Don't Want To Miss This Winter.jpg" class="w-full h-full object-cover rounded-lg" alt="">
+            <div class="absolute bg-black bg-opacity-50 inset-0 flex justify-end flex-col p-4 rounded-lg">
+                <div class="card_header bg-white bg-opacity-65 py-3 rounded">
+                    <div class="card_icon justify-between flex">
+                        <h2 class="text-2xl font-medium ps-4">
+                            World-class design
+                        </h2>
+                        <i class="fa-solid fa-plus pe-6 text-xl"></i>
+                    </div>
+                    <div class="card_details hidden transition-all duration-300 ease-in-out">
+                        <p class="ps-4 py-2">
+                            Design is how it works, but it's more than a four walls and a roof. No details is too minute for us and our top-notch architectural and engineering partners.
+                            <ul class="ps-4">
+                                <li class="pb-2">&#10004 Award-winning architects</li>
+                                <li class="pb-2">&#10004 Designed for ultimate comfort
+                                </li>
+                                <li class="pb-2">&#10004 AI-driven performance engineering</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="mx-auto max-w-4xl my-10">
+        <div class="relative">
+            <img src="images/4da4adf2-663c-4f35-a3d4-a90c3510b37b.jpg" class="w-full h-full object-cover rounded-lg" alt="">
+            <div class="absolute bg-black bg-opacity-50 inset-0 flex justify-end flex-col p-4 rounded-lg">
+                <div class="card_header bg-white bg-opacity-65 py-3 rounded">
+                    <div class="card_icon justify-between flex">
+                        <h2 class="text-2xl font-medium ps-4">
+                            Simple construction process
+                        </h2>
+                        <i class="fa-solid fa-plus pe-6 text-xl"></i>
+                    </div>
+                    <div class="card_details hidden transition-all duration-300 ease-in-out">
+                        <p class="ps-4 py-2">
+                            Haaven spaces are made using our best-in-class prefab construction system. Simply put, this means no time and cost overruns. Plus, a lifetime of living enjoyment.
+                            <ul class="ps-4">
+                                <li class="pb-2">&#10004 10 year warranty</li>
+                                <li class="pb-2">&#10004 Move-in within 10 weeks
+                                </li>
+                                <li class="pb-2">&#10004 Increases the value of your home
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ======================================================== -->
+
+
+<div class="relative mx-5 overflow-hidden my-12 py-12">
+
+    <!-- Navigation Buttons -->
+    <div class="inset-0 flex items-center px-4">
+        <button id="prev" class="p-3 text-3xl">&larr;</button>
+        <button id="next" class=" p-3 text-3xl">&rarr;</button>
+    </div>
+
+
+    <!-- Testimonial Wrapper -->
+    <div id="testimonial-carousel" class="flex transition-transform duration-500">
+    <!-- Slide 1 -->
+    <div class="w-full flex-shrink-0">
+        <blockquote class="text-3xl md:text-5xl">"A very pleasant guidance throughout the entire process, from orientation to permit application and construction. We are very happy with the end result: a beautiful design, high quality, and great attention to detail."</blockquote>
+        <p class="mt-5 font-semibold">- Rutger & Eva</p>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="w-full flex-shrink-0">
+        <blockquote class="text-3xl md:text-5xl">"Sacha invests time in truly understanding the context and family situation, along with the related wishes. He also pleasantly surprised me with how quickly he established contact with the local council to explore possibilities within the maze of regulations. In just two productive sessions, he gathered all the information needed to create a yes-able proposal, which I look forward to presenting to my partner"</blockquote>
+        <p class="mt-4 font-semibold">- John & Jane</p>
+    </div>
+    </div>
+</div>
+
+
+
+
+<!-- ============================================== -->
+<section class="py-12 my-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 py-8">
+        <div class="py-8">
+            <h2 class="font-Roboto font-bold text-5xl justify-center flex pb-3">QUOTE</h2>
+            <div class="justify-center flex items-center">
+                <p class="text-lg">Hazel challenges
+                suburbs with sleek homes.
+                </p>
+            </div>
+        </div>
+        <div class="py-8">
+            <h2 class="font-DancingScript font-black text-5xl justify-center flex pb-3">TNW</h2>
+            <div class="justify-center flex items-center">
+                <p class="text-lg">Hazel simplifies homebuilding with no hidden costs.
+                </p>
+            </div>
+        </div>
+        <div class="py-8">
+            <h2 class="font-Roboto font-extrabold text-5xl justify-center flex pb-3">mt/sprout</h2>
+            <div class="justify-center flex items-center">
+                <p class="text-lg">Hazel raises €1.1M for prefab home marketplace.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================= -->
+
+<section class="bg-slate-100">
+    <div class="md:text-6xl text-neutral-400 py-12 mt-12 text-4xl">
+        <p class="md:justify-end flex justify-center pt-12">
+            No unexpected delays.
+        </p>
+        <p class="justify-center flex">
+            No cut corners. No surprises.
+        </p>
+        <p class="md:ps-10 pb-12 mb-12 justify-center flex md:justify-start">
+            Full control.<span class="text-black">The Hazel way.</span>
+        </p>
+    </div>
+</section>
+
+<footer class="bg-amber-400">
+    <div class="grid grid-cols-1 md:grid-cols-4 py-12">
+        <div class="text-3xl py-8 ms-5">
+            Hazel
+        </div>
+        
+        <div class="py-8">
+            <ul class="ms-5">
+                <li class="text-sm">Discover</li>
+                <li class="mt-4 mb-3"><a href="index.html" class="hover:underline">Hazel</a></li>
+                <li class=" mb-3"><a href="about.html" class="hover:underline">About</a></li>
+                <li class=" mb-3"><a href="" class="hover:underline">Blog</a></li>
+            </ul>
+        </div>
+
+        <div class="py-8">
+            <ul class="ms-5">
+                <li class="text-sm">Service</li>
+                <li class="mt-4 mb-3"><a href="details.html" class="hover:underline">How it works</a></li>
+                <li class=" mb-3"><a href="contact.html" class="hover:underline">Contact</a></li>
+                <li class=" mb-3"><a href="" class="hover:underline">Press</a></li>
+            </ul>
+        </div>
+        
+        <div class="py-8">
+            <ul class="ms-5">
+                <li class="text-sm">contact</li>
+                <li class="mt-4 mb-3">7, Farayola Street</li>
+                <li class="mb-3">Ketu-Alapere</li>
+                <li class="mb-3">Lagos</li>
+                <li class="mb-3">akabane2234@gmail.com</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+<script>
+    const carousel = document.getElementById('testimonial-carousel');
+    const slides = carousel.children; // Access all slides
+    const totalSlides = slides.length;
+    let index = 0; // Initial slide index
+
+    // Navigate to the previous slide
+    document.getElementById('prev').addEventListener('click', () => {
+      index = (index - 1 + totalSlides) % totalSlides; // Loop back to the last slide if index goes below 0
+      updateCarousel();
+    });
+
+    // Navigate to the next slide
+    document.getElementById('next').addEventListener('click', () => {
+      index = (index + 1) % totalSlides; // Loop back to the first slide if index exceeds totalSlides
+      updateCarousel();
+    });
+
+    // Function to update the carousel's translation
+    function updateCarousel() {
+      const offset = -index * 100; // Calculate the offset for translation
+      carousel.style.transform = `translateX(${offset}%)`; // Translate the carousel  
+    }
+
+    // FAQ
+    // const card = document.querySelectorAll(".card_header");
+
+    // card.forEach(card_header => {
+    //     card_header.addEventListener("click", () => {
+    //         const answer = card_header.querySelector('.card_icons');
+    //             answer.classList.toggle('hidden');
+
+    //             // Change the icon dynamically
+    //             const icon = card_header.querySelector('.card_details');
+    //             if (icon.className === 'fa-solid fa-circle-plus') {
+    //                 icon.className === 'fa-solid fa-circle-minus';
+    //             } else {
+    //                 icon.className === 'fa-solid fa-circle-plus';
+    //             }
+    //     })
+    // }
+
+    // )
+
+
+    const cards = document.querySelectorAll(".card_header");
+
+        cards.forEach(card => {
+            const cardIcon = card.querySelector('.toggle-icon');
+            const cardDetails = card.querySelector('.card_details');
+
+            card.addEventListener("click", () => {
+                // Toggle visibility of the details
+                cardDetails.classList.toggle('hidden');
+
+                // Toggle the icon dynamically
+                if (cardIcon.classList.contains('.fa-plus')) {
+                    cardIcon.classList.remove('.fa-plus');
+                    cardIcon.classList.add('.fa-minus');
+                } else {
+                    cardIcon.classList.remove('.fa-minus');
+                    cardIcon.classList.add('.fa-plus');
+                }
+            });
+        });
+
+  </script>
+
+
+
+
+
+    <!-- JavaScript to handle the toggle of the navigation menu -->
+    <script>
+        // Selects the navigation links container
+        const navLinks = document.querySelector('.nav-links');
+        
+        // Function to toggle the menu visibility
+        function onToggleMenu(e) {
+            // Switch the icon between 'menu' and 'close'
+            e.name = e.name === 'menu' ? 'close' : 'menu';
+            // Toggle the menu's position to make it appear or disappear
+            navLinks.classList.toggle('top-[9%]');
+        }
+    </script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
